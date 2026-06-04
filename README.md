@@ -1,26 +1,61 @@
-# Mon Portfolio
+# Douae Annasri — Portfolio
 
-## Description
+Personal portfolio website for Douae Annasri, AI & Data Science Engineering student.
 
-Ceci est mon portfolio personnel où je présente mes projets, mes compétences et mes informations de contact.
+## 🚀 Publishing to GitHub Pages
 
-## Technologies utilisées
+### Step 1: Create a GitHub repository
 
-* HTML
-* CSS
-* JavaScript
+1. Go to [github.com](https://github.com) and sign in
+2. Click **New repository** (the green button)
+3. Name it exactly: `yourusername.github.io`  
+   *(Replace `yourusername` with your actual GitHub username)*
+4. Set it to **Public**
+5. Click **Create repository**
 
-## Projets
+### Step 2: Upload the files
 
-* Projet 1 : Système de Pointage Facial
-* Projet 2 : Assistant Email Intelligent
-* Projet 3 : Chatbot de Gestion des Absences
+Upload these files to the repository:
+- `index.html`
+- `style.css`
+- `main.js`
+- `douae.png` (your photo)
 
-## Voir le site
+**Via GitHub website:**
+1. Click **Add file → Upload files**
+2. Drag all four files into the upload area
+3. Click **Commit changes**
 
-Lien : https://douaean.github.io/portfolio
+### Step 3: Enable GitHub Pages
 
-## Contact
+1. Go to your repository **Settings**
+2. Scroll to **Pages** in the left sidebar
+3. Under **Source**, select **Deploy from a branch**
+4. Set branch to `main` and folder to `/ (root)`
+5. Click **Save**
 
-Email : annasridouae3@gmail.com
-GitHub : https://github.com/douaean
+### Step 4: Visit your site 🎉
+
+After 1–2 minutes, your portfolio will be live at:
+```
+https://yourusername.github.io
+```
+
+---
+
+## 📁 File Structure
+
+```
+portfolio/
+├── index.html      # Main page
+├── style.css       # All styles
+├── main.js         # Scroll animations & interactions
+├── douae.png       # Your photo
+└── README.md       # This file
+```
+
+## ✏️ Customization
+
+- **Update links**: Edit the LinkedIn URL in `index.html` (search for `linkedin.com/in/douae-annasri`)
+- **Add portfolio link**: Replace the `Portfolio` href in the nav
+- **Colors**: Change `--accent` in `style.css` (currently red `#E84545`)

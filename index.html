@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Douae Annasri — AI & Data Science Engineer</title>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Syne:wght@400;500;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
@@ -19,10 +19,11 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a href="mailto:annasridouae3@gmail.com" class="nav-cta">Hire me</a>
+    <a href="mailto:annasridouae3@gmail.com" class="nav-cta">Hire Me →</a>
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
   </nav>
 
+  <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
     <a href="#about" onclick="toggleMenu()">About</a>
     <a href="#skills" onclick="toggleMenu()">Skills</a>
@@ -33,223 +34,261 @@
 
   <!-- HERO -->
   <section class="hero" id="about">
+    <div class="hero-blob"></div>
+    <div class="hero-blob hero-blob-2"></div>
 
-    <!-- LEFT STAT -->
-    <div class="hero-side hero-side--left">
-      <div class="quote-block">
-        <div class="quote-icon">"</div>
-        <p>Douae's AI systems deliver real results — 98%+ accuracy and production-ready deployments that just work.</p>
+    <div class="hero-left">
+      <div class="hero-tag animate-in" style="--delay:0.1s">
+        <span class="tag-dot"></span> Open to internships
       </div>
-    </div>
-
-    <!-- CENTER -->
-    <div class="hero-center">
-      <h1 class="hero-title">
+      <h1 class="hero-title animate-in" style="--delay:0.2s">
         I'm <span class="accent">Douae</span>,<br>
-        AI &amp; Data Science<br>Engineer
+        AI & Data<br>Science Engineer
       </h1>
+      <p class="hero-desc animate-in" style="--delay:0.35s">
+        Engineering student at ENSIASD · Building intelligent systems with Deep Learning, Computer Vision, and Cloud.
+      </p>
+      <div class="hero-btns animate-in" style="--delay:0.5s">
+        <a href="#projects" class="btn-primary">Projects ↗</a>
+        <a href="mailto:annasridouae3@gmail.com" class="btn-ghost">Contact me</a>
+      </div>
+      <div class="hero-meta animate-in" style="--delay:0.65s">
+        <div class="meta-card">
+          <div class="meta-stars">★★★★★</div>
+          <div class="meta-label"><strong>98%+</strong> Accuracy</div>
+          <div class="meta-sub">on Anti-Spoofing model</div>
+        </div>
+        <div class="meta-card">
+          <div class="meta-num">4+</div>
+          <div class="meta-label">Projects</div>
+          <div class="meta-sub">Shipped & deployed</div>
+        </div>
+        <div class="meta-card">
+          <div class="meta-num">3</div>
+          <div class="meta-label">Languages</div>
+          <div class="meta-sub">AR · FR · EN</div>
+        </div>
+      </div>
+    </div>
 
-      <div class="hero-photo-wrap">
-        <div class="photo-circle"></div>
+    <div class="hero-right animate-in" style="--delay:0.3s">
+      <div class="photo-wrap">
+        <div class="photo-ring"></div>
         <img src="douae.png" alt="Douae Annasri" class="hero-photo"/>
-        <div class="sparkle sparkle-1"></div>
-        <div class="sparkle sparkle-2"></div>
       </div>
-
-      <div class="hero-actions">
-        <a href="#projects" class="btn-red">Projects ↗</a>
-        <a href="mailto:annasridouae3@gmail.com" class="btn-text">Hire me</a>
+      <div class="floating-badge badge-1">
+        <span class="badge-icon">🧠</span>
+        <div>
+          <div class="badge-title">Deep Learning</div>
+          <div class="badge-sub">Swin Transformer</div>
+        </div>
       </div>
-    </div>
-
-    <!-- RIGHT STAT -->
-    <div class="hero-side hero-side--right">
-      <div class="stat-block">
-        <div class="stat-stars">★★★★★</div>
-        <div class="stat-num">98%+</div>
-        <div class="stat-label">Model Accuracy</div>
+      <div class="floating-badge badge-2">
+        <span class="badge-icon">☁️</span>
+        <div>
+          <div class="badge-title">Cloud & DevOps</div>
+          <div class="badge-sub">Azure · Docker · K8s</div>
+        </div>
       </div>
     </div>
-
   </section>
 
   <!-- SKILLS -->
-  <section class="section skills-section" id="skills">
-    <div class="section-inner">
-      <div class="section-tag">What I work with</div>
-      <h2 class="section-heading">Key <span class="accent">Skills</span></h2>
+  <section class="skills-section" id="skills">
+    <div class="section-label">What I work with</div>
+    <h2 class="section-title">Key <span class="accent">Skills</span></h2>
 
-      <div class="skills-grid">
-        <div class="skill-card">
-          <div class="skill-icon">🤖</div>
-          <h3>AI & Machine Learning</h3>
-          <div class="pills">
-            <span>Deep Learning</span><span>Computer Vision</span>
-            <span>Python</span><span>TensorFlow</span>
-            <span>OpenCV</span><span>Scikit-learn</span>
-            <span>Swin Transformer</span>
-          </div>
-        </div>
+    <div class="skills-grid">
 
-        <div class="skill-card">
-          <div class="skill-icon">☁️</div>
-          <h3>Big Data & Cloud</h3>
-          <div class="pills">
-            <span>Hadoop</span><span>HDFS</span>
-            <span>MapReduce</span><span>Microsoft Azure</span>
-            <span>Docker</span><span>Kubernetes</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">⚙️</div>
-          <h3>Automation & DevOps</h3>
-          <div class="pills">
-            <span>n8n Workflow</span><span>Bash Scripting</span>
-            <span>Microsoft Intune</span><span>Windows Server</span>
-          </div>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">💻</div>
-          <h3>Web Development</h3>
-          <div class="pills">
-            <span>Spring Boot 3</span><span>React</span>
-            <span>RESTful APIs</span><span>SQL</span><span>Java</span>
-          </div>
+      <div class="skill-card skill-card--ai">
+        <div class="skill-card-icon">🤖</div>
+        <h3>AI & Machine Learning</h3>
+        <div class="skill-pills">
+          <span>Deep Learning</span>
+          <span>Computer Vision</span>
+          <span>Python</span>
+          <span>TensorFlow</span>
+          <span>OpenCV</span>
+          <span>Scikit-learn</span>
+          <span>Swin Transformer</span>
         </div>
       </div>
+
+      <div class="skill-card skill-card--cloud">
+        <div class="skill-card-icon">☁️</div>
+        <h3>Big Data & Cloud</h3>
+        <div class="skill-pills">
+          <span>Hadoop</span>
+          <span>HDFS</span>
+          <span>MapReduce</span>
+          <span>Microsoft Azure</span>
+          <span>Docker</span>
+          <span>Kubernetes</span>
+        </div>
+      </div>
+
+      <div class="skill-card skill-card--auto">
+        <div class="skill-card-icon">⚙️</div>
+        <h3>Automation & DevOps</h3>
+        <div class="skill-pills">
+          <span>n8n Workflow</span>
+          <span>Bash Scripting</span>
+          <span>Microsoft Intune</span>
+          <span>Windows Server</span>
+        </div>
+      </div>
+
+      <div class="skill-card skill-card--web">
+        <div class="skill-card-icon">💻</div>
+        <h3>Web Development</h3>
+        <div class="skill-pills">
+          <span>Spring Boot 3</span>
+          <span>React</span>
+          <span>RESTful APIs</span>
+          <span>SQL</span>
+          <span>Java</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- EXPERIENCE -->
-  <section class="section exp-section" id="experience">
-    <div class="section-inner">
-      <div class="section-tag">Where I've worked</div>
-      <h2 class="section-heading">Professional <span class="accent">Experience</span></h2>
+  <section class="exp-section" id="experience">
+    <div class="section-label">Where I've worked</div>
+    <h2 class="section-title">Professional <span class="accent">Experience</span></h2>
 
-      <div class="exp-card">
-        <div class="exp-top">
-          <div>
-            <div class="exp-role">Systems & Network Administrator</div>
-            <div class="exp-company">CBI · Casablanca</div>
-          </div>
-          <div class="exp-date">Apr – Jun 2024</div>
+    <div class="exp-card">
+      <div class="exp-header">
+        <div>
+          <div class="exp-role">Systems & Network Administrator</div>
+          <div class="exp-company">CBI — Casablanca</div>
         </div>
-        <ul class="exp-list">
-          <li>Managed and deployed <strong>50+ virtual users</strong> and devices via Microsoft Intune, improving centralized administration and security compliance.</li>
-          <li>Strengthened endpoint security with Microsoft Defender — contributed to a <strong>~25% reduction</strong> in malware and phishing incidents.</li>
-          <li>Administered Windows Server infrastructure in a virtualized environment, ensuring <strong>80% service availability</strong>.</li>
-          <li>Configured and maintained <strong>10+ virtual machines</strong> on Microsoft Azure in a hybrid IT environment.</li>
-        </ul>
-        <div class="exp-tags">
-          <span>Microsoft Intune</span><span>Microsoft Defender</span>
-          <span>Windows Server</span><span>Azure</span>
-        </div>
+        <div class="exp-date">Apr 2024 – Jun 2024</div>
+      </div>
+      <ul class="exp-list">
+        <li>Managed and deployed <strong>50+ virtual users</strong> via Microsoft Intune, improving centralized administration and security compliance.</li>
+        <li>Strengthened endpoint security with Microsoft Defender, contributing to a <strong>~25% reduction</strong> in malware and phishing incidents.</li>
+        <li>Administered Windows Server infrastructure in a virtualized environment, ensuring <strong>80% service availability</strong>.</li>
+        <li>Leveraged Microsoft Azure to configure and maintain <strong>10+ virtual machines</strong> in a hybrid IT environment.</li>
+      </ul>
+      <div class="exp-tags">
+        <span>Microsoft Intune</span>
+        <span>Microsoft Defender</span>
+        <span>Windows Server</span>
+        <span>Azure</span>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section class="section projects-section" id="projects">
-    <div class="section-inner">
-      <div class="section-tag">What I've built</div>
-      <h2 class="section-heading">Featured <span class="accent">Projects</span></h2>
+  <section class="projects-section" id="projects">
+    <div class="section-label">What I've built</div>
+    <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
 
-      <div class="projects-grid">
+    <div class="projects-grid">
 
-        <div class="project-card project-card--hero">
-          <div class="project-no">01</div>
-          <div class="project-emoji">👁️</div>
-          <h3>Facial Anti-Spoofing Detection</h3>
-          <p>Anti-spoofing system using Swin Transformer, evaluated against adversarial attacks (FGSM, PGD). Achieved 98%+ accuracy with improved adversarial robustness.</p>
-          <div class="pills pills--dark">
-            <span>Swin Transformer</span><span>FGSM</span><span>PGD</span><span>Python</span>
-          </div>
-          <div class="project-badge">98%+ Accuracy</div>
+      <div class="project-card project-card--featured">
+        <div class="project-number">01</div>
+        <div class="project-emoji">👁️</div>
+        <h3>Facial Anti-Spoofing Detection</h3>
+        <p>Facial anti-spoofing system using Swin Transformer, evaluated against adversarial attacks (FGSM, PGD). Achieved 98%+ accuracy with improved robustness.</p>
+        <div class="project-tags">
+          <span>Swin Transformer</span>
+          <span>FGSM</span>
+          <span>PGD</span>
+          <span>Python</span>
         </div>
-
-        <div class="project-card">
-          <div class="project-no">02</div>
-          <div class="project-emoji">📧</div>
-          <h3>Intelligent Email Assistant</h3>
-          <p>Automated n8n workflow for intelligent email management with a Blockchain integrity layer using cryptographic hashing.</p>
-          <div class="pills">
-            <span>n8n</span><span>Blockchain</span><span>AI</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-no">03</div>
-          <div class="project-emoji">🚗</div>
-          <h3>Car Price Prediction</h3>
-          <p>Regression model for the Moroccan automotive market using Scikit-learn with feature engineering and hyperparameter tuning.</p>
-          <div class="pills">
-            <span>Scikit-learn</span><span>Python</span><span>ML</span>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-no">04</div>
-          <div class="project-emoji">🎓</div>
-          <h3>Facial Recognition Attendance</h3>
-          <p>Real-time attendance management system built with Java and OpenCV, containerized with Docker for portability.</p>
-          <div class="pills">
-            <span>Java</span><span>OpenCV</span><span>Docker</span>
-          </div>
-        </div>
-
+        <div class="project-stat">98%+ Accuracy</div>
       </div>
+
+      <div class="project-card">
+        <div class="project-number">02</div>
+        <div class="project-emoji">📧</div>
+        <h3>Intelligent Email Assistant</h3>
+        <p>Automated n8n workflow for intelligent email management with a Blockchain integrity layer using cryptographic hashing.</p>
+        <div class="project-tags">
+          <span>n8n</span>
+          <span>Blockchain</span>
+          <span>Automation</span>
+          <span>AI</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-number">03</div>
+        <div class="project-emoji">🚗</div>
+        <h3>Car Price Prediction</h3>
+        <p>Regression model for the Moroccan automotive market using Scikit-learn with feature engineering and hyperparameter tuning.</p>
+        <div class="project-tags">
+          <span>Scikit-learn</span>
+          <span>Python</span>
+          <span>ML</span>
+          <span>Regression</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-number">04</div>
+        <div class="project-emoji">🎓</div>
+        <h3>Facial Recognition Attendance</h3>
+        <p>Real-time student attendance management system built with Java and OpenCV, containerized with Docker for portability.</p>
+        <div class="project-tags">
+          <span>Java</span>
+          <span>OpenCV</span>
+          <span>Docker</span>
+          <span>Real-Time</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
   <!-- EDUCATION -->
-  <section class="section edu-section">
-    <div class="section-inner">
-      <div class="section-tag">Academic Background</div>
-      <h2 class="section-heading">Education</h2>
-      <div class="edu-grid">
-        <div class="edu-card edu-card--active">
-          <div class="edu-now">Current</div>
-          <div class="edu-deg">Engineering Degree</div>
-          <div class="edu-field">Data Science & AI</div>
-          <div class="edu-school">ENSIASD</div>
-          <div class="edu-loc">Taroudant, Morocco · 2024 – Present</div>
-        </div>
-        <div class="edu-card">
-          <div class="edu-deg">Degree in</div>
-          <div class="edu-field">Computer Engineering</div>
-          <div class="edu-school">Hassan II University</div>
-          <div class="edu-loc">Casablanca, Morocco · 2024</div>
-        </div>
+  <section class="edu-section">
+    <div class="section-label">Academic Background</div>
+    <h2 class="section-title">Education</h2>
+
+    <div class="edu-grid">
+      <div class="edu-card edu-card--current">
+        <div class="edu-badge">Current</div>
+        <div class="edu-degree">Engineering Degree</div>
+        <div class="edu-field">Data Science & AI</div>
+        <div class="edu-school">ENSIASD</div>
+        <div class="edu-location">Taroudant, Morocco · 2024 – Present</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-degree">Degree in</div>
+        <div class="edu-field">Computer Engineering</div>
+        <div class="edu-school">Hassan II University</div>
+        <div class="edu-location">Casablanca, Morocco · June 2024</div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section class="section contact-section" id="contact">
-    <div class="section-inner contact-inner">
-      <div class="contact-text">
-        <div class="section-tag">Let's connect</div>
-        <h2 class="contact-heading">Open to new<br><span class="accent">Opportunities</span></h2>
-        <p>I'm actively seeking opportunities in AI, Data Science, and Cloud Engineering. Let's build something impactful together.</p>
-        <div class="contact-meta">
-          <div>📍 Casablanca, Morocco</div>
-          <div>📞 +212 670 780 494</div>
-          <div>🌐 Arabic · French · English</div>
-        </div>
-      </div>
-      <div class="contact-actions">
-        <a href="mailto:annasridouae3@gmail.com" class="btn-red btn-xl">Send an email ↗</a>
-        <a href="https://www.linkedin.com/in/douae-annasri" target="_blank" class="btn-outline btn-xl">LinkedIn</a>
-      </div>
+  <section class="contact-section" id="contact">
+    <div class="contact-blob"></div>
+    <div class="section-label">Let's connect</div>
+    <h2 class="contact-title">Looking for a<br><span class="accent">Summer Internship</span></h2>
+    <p class="contact-desc">I'm actively looking for summer internship opportunities in AI, Data Science, or Cloud Engineering. Let's build something great together.</p>
+
+    <div class="contact-actions">
+      <a href="mailto:annasridouae3@gmail.com" class="btn-primary btn-large">annasridouae3@gmail.com ↗</a>
+      <a href="https://www.linkedin.com/in/douae-annasri" target="_blank" class="btn-ghost btn-large">LinkedIn Profile</a>
+    </div>
+
+    <div class="contact-info">
+      <div class="info-item">📍 Casablanca, Morocco</div>
+      <div class="info-item">📞 +212 670 780 494</div>
+      <div class="info-item">🌐 Arabic · French · English</div>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-logo">DA<span class="dot">.</span></div>
-    <div class="footer-copy">© 2026 Douae Annasri</div>
+    <div class="footer-copy">© 2026 Douae Annasri. All rights reserved.</div>
   </footer>
 
   <script src="main.js"></script>
